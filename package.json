@@ -1,10 +1,10 @@
 {
-  "name": "2048-cram",
-  "description": "2048 with pop up questions to play and cram!",
+  "name": "2048-kensho",
+  "description": "2048 at Kensho",
   "version": "0.0.1",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
-    "url": "https://github.com/bahmutov/2048-cram/issues"
+    "url": "https://github.com/bahmutov/2048-kensho/issues"
   },
   "devDependencies": {
     "grunt": "^0.4.4",
@@ -19,7 +19,7 @@
     "jshint-stylish": "^0.1.5",
     "matchdep": "^0.3.0"
   },
-  "homepage": "https://github.com/bahmutov/2048-cram",
+  "homepage": "https://github.com/bahmutov/2048-kensho",
   "keywords": [
     "2048"
   ],
@@ -27,7 +27,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/bahmutov/2048-cram.git"
+    "url": "git://github.com/bahmutov/2048-kensho.git"
   },
   "scripts": {
     "test": "grunt"
