@@ -41,7 +41,7 @@ HTMLActuator.prototype.continue = function () {
 };
 
 HTMLActuator.prototype.clearContainer = function (container) {
-  while (container.firstChild) {
+  while (container && container.firstChild) {
     container.removeChild(container.firstChild);
   }
 };
@@ -104,7 +104,9 @@ HTMLActuator.prototype.positionClass = function (position) {
 };
 
 HTMLActuator.prototype.updateScore = function (score) {
-  this.clearContainer(this.correctAnswersContainer);
+  return;
+  /*
+  th8is.clearContainer(this.correctAnswersContainer);
 
   var difference = score - this.score;
   this.score = score;
@@ -117,16 +119,16 @@ HTMLActuator.prototype.updateScore = function (score) {
     addition.textContent = "+" + difference;
 
     this.correctAnswersContainer.appendChild(addition);
-  }
+  }*/
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
-  this.wrongContainer.textContent = bestScore;
+  // this.wrongContainer.textContent = bestScore;
 };
 
 HTMLActuator.prototype.message = function (won) {
   var type    = won ? "game-won" : "game-over";
-  var message = won ? "You win!" : "Game over!";
+  var message = won ? "You beat Kensho!" : "Kensho won!";
 
   this.messageContainer.classList.add(type);
   this.messageContainer.getElementsByTagName("p")[0].textContent = message;
