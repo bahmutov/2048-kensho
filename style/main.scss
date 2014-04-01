@@ -325,13 +325,13 @@ hr {
     border-radius: $tile-border-radius;
 
     /*background: $tile-color;*/
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     z-index: 10;
 
     font-size: 35px;
     position: relative;
-    left: -45px;
+    left: 5px;
     bottom: -40px;
 
   }
@@ -347,13 +347,13 @@ hr {
   $limit: 11;
 
   // Colors for all 11 states, false = no special color
-  $special-colors: false false, // 2
-                   false false, // 4
+  $special-colors: #ffffff true, // 2
+                   #ff7700 true, // 4
                    #f78e48 true, // 8
                    #fc5e2e true, // 16
                    #ff3333 true, // 32
                    #ff0000 true, // 64
-                   false true, // 128
+                   $bright-text-color true, // 128
                    false true, // 256
                    false true, // 512
                    false true, // 1024
@@ -377,7 +377,7 @@ hr {
         $mixed-background: mix($special-background, $mixed-background, 55%);
       }
 
-      color: $bright-text-color;
+      color: nth($nth-color, 1);
     }
 
     $exponent: $exponent + 1;
