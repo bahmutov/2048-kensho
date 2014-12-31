@@ -27,6 +27,7 @@
   ],
   "license": "MIT",
   "main": "index.js",
+  "pre-commit": "npm test",
   "private": true,
   "repository": {
     "type": "git",
@@ -34,6 +35,5 @@
   },
   "scripts": {
     "test": "grunt"
-  },
-  "pre-commit": "npm test"
+  }
 }
