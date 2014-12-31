@@ -6,6 +6,7 @@
   "bugs": {
     "url": "https://github.com/bahmutov/2048-kensho/issues"
   },
+  "contributors": [],
   "devDependencies": {
     "grunt": "^0.4.4",
     "grunt-bower-task": "^0.3.4",

@@ -103,7 +103,7 @@ HTMLActuator.prototype.positionClass = function (position) {
   return "tile-position-" + position.x + "-" + position.y;
 };
 
-HTMLActuator.prototype.updateScore = function (score) {
+HTMLActuator.prototype.updateScore = function (/*score*/) {
   return;
   /*
   th8is.clearContainer(this.correctAnswersContainer);
@@ -122,7 +122,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }*/
 };
 
-HTMLActuator.prototype.updateBestScore = function (bestScore) {
+HTMLActuator.prototype.updateBestScore = function (/*bestScore*/) {
   // this.wrongContainer.textContent = bestScore;
 };
 
