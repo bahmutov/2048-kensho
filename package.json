@@ -18,7 +18,8 @@
     "grunt-npm2bower-sync": "^0.3.0",
     "grunt-replace": "^0.7.6",
     "jshint-stylish": "^0.1.5",
-    "matchdep": "^0.3.0"
+    "matchdep": "^0.3.0",
+    "pre-git": "0.1.1"
   },
   "homepage": "https://github.com/bahmutov/2048-kensho",
   "keywords": [
@@ -33,5 +34,6 @@
   },
   "scripts": {
     "test": "grunt"
-  }
+  },
+  "pre-commit": "npm test"
 }
