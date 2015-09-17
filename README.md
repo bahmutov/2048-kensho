@@ -6,6 +6,10 @@
 
 Every page reload reshuffles the team numbers
 
+To run the website locally: `npm start` then open the website
+
+To push to the website: `npm run push`
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2014
