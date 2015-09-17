@@ -6,18 +6,27 @@
     'doug', 'barr', 'lynn', 'alec', 'kim', 'kate',
     'bo', 'chase', 'bruno', 'andre', 'angela', 'brandon',
     'john', 'courtney'];
-
-  function randomly() { return 0.5 - Math.random(); }
-  names.sort(randomly);
-
-  function formUrl(name) {
+  var formUrl = function formUrl(name) {
     if (typeof name !== 'string' || !name) {
       throw new Error('need name string, got ' + name);
     }
     // + name.jpg gives full url
     var url = 'http://dm6vfd9rrksh7.cloudfront.net/bio-';
     return url + name + '.jpg';
+  };
+
+  // grab the team dynamically via exposed controller function
+  if (typeof teamGridController === 'function') {
+    var fakeScope = {};
+    teamGridController(fakeScope, noop, noop);
+    names = Object.keys(fakeScope.team);
+    formUrl = function formUrl(name) {
+      return fakeScope.teamImgURL + 'bio-' + name + '.jpg';
+    };
   }
+
+  function randomly() { return 0.5 - Math.random(); }
+  names.sort(randomly);
 
   // tiles have classes tile-2, tile-4, etc
   var k = 0, power = 2;

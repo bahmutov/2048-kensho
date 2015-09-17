@@ -85,7 +85,19 @@
   </div>
 
   <script src="js/vein.js"></script>
+
+  <!-- fake angular for extracting the team members dynamically -->
+  <script>
+    function noop() {}
+    function self() { return this; }
+    var angular = {
+      module: self,
+      directive: self
+    };
+  </script>
+  <script src="https://www.kensho.com/js/team/team-grid.js"></script>
   <script src="js/team.js"></script>
+
   <script src="js/animframe_polyfill.js"></script>
   <script src="js/keyboard_input_manager.js"></script>
   <script src="js/html_actuator.js"></script>

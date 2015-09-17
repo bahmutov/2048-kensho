@@ -1,7 +1,7 @@
 {
   "name": "2048-kensho",
   "description": "2048 at Kensho",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Gleb Bahmutov <gleb.bahmutov@gmail.com>",
   "bugs": {
     "url": "https://github.com/bahmutov/2048-kensho/issues"
