@@ -42,6 +42,7 @@
   },
   "scripts": {
     "test": "grunt",
-    "start": "http-server -p 3000"
+    "start": "http-server -p 3000",
+    "push": "grunt gh-pages"
   }
 }
