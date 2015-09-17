@@ -6,6 +6,7 @@
     'doug', 'barr', 'lynn', 'alec', 'kim', 'kate',
     'bo', 'chase', 'bruno', 'andre', 'angela', 'brandon',
     'john', 'courtney'];
+
   var formUrl = function formUrl(name) {
     if (typeof name !== 'string' || !name) {
       throw new Error('need name string, got ' + name);
@@ -21,7 +22,8 @@
     teamGridController(fakeScope, noop, noop);
     names = Object.keys(fakeScope.team);
     formUrl = function formUrl(name) {
-      return fakeScope.teamImgURL + 'bio-' + name + '.jpg';
+      var img = fakeScope.team[name].img;
+      return 'https:' + fakeScope.teamImgURL + img;
     };
   }
 
