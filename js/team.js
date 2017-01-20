@@ -12,7 +12,7 @@
       throw new Error('need name string, got ' + name);
     }
     // + name.jpg gives full url
-    var url = 'http://dm6vfd9rrksh7.cloudfront.net/bio-';
+    var url = 'https://dm6vfd9rrksh7.cloudfront.net/bio-';
     return url + name + '.jpg';
   };
 
