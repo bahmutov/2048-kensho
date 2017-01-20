@@ -45,6 +45,7 @@
     "build": "grunt",
     "push": "grunt gh-pages",
     "start": "http-server -p 3000",
-    "test": "grunt"
+    "test": "grunt",
+    "test-deployed": "CYPRESS_baseUrl=https://glebbahmutov.com/2048-kensho cypress run"
   }
 }

@@ -10,6 +10,21 @@ Every page reload reshuffles the team numbers
 * run the website locally: `npm start` then open the website
 * push the built website: `npm run push`
 
+## E2E testing
+
+Uses [Cypress](https://www.cypress.io/).
+
+```sh
+npm install -g cypress-cli
+cypress install
+cypress open
+```
+
+Then login with GitHub account (make sure to get invite from
+`https://www.cypress.io/` by asking on `https://gitter.im/cypress-io/cypress`)
+
+To run against deployed website use `npm run test-deployed`.
+
 ## Small print
 
 Author: Gleb Bahmutov &copy; 2014
