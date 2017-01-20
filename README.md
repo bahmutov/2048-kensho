@@ -6,9 +6,9 @@
 
 Every page reload reshuffles the team numbers
 
-To run the website locally: `npm start` then open the website
-
-To push to the website: `npm run push`
+* build with `npm run build`
+* run the website locally: `npm start` then open the website
+* push the built website: `npm run push`
 
 ## Small print
 

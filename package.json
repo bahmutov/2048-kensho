@@ -10,6 +10,7 @@
   "devDependencies": {
     "grunt": "0.4.5",
     "grunt-bower-task": "0.4.0",
+    "grunt-cli": "1.2.0",
     "grunt-contrib-jshint": "0.10.0",
     "grunt-contrib-sass": "0.8.1",
     "grunt-contrib-watch": "0.6.1",
@@ -42,6 +43,7 @@
   },
   "scripts": {
     "test": "grunt",
+    "build": "grunt",
     "start": "http-server -p 3000",
     "push": "grunt gh-pages"
   }

@@ -75,7 +75,7 @@ module.exports = function (grunt) {
     watch: {
       all: {
         files: ['*.js', 'js/*.js', 'style/*.scss'],
-        tasks: ['jshint', 'sass']
+        tasks: ['sass']
       }
     }
   });
@@ -84,6 +84,6 @@ module.exports = function (grunt) {
   plugins.forEach(grunt.loadNpmTasks);
 
   grunt.registerTask('default', ['nice-package', 'sync', 'bower', 'build']);
-  grunt.registerTask('build', ['jshint', 'sass']);
+  grunt.registerTask('build', ['sass']);
   grunt.registerTask('run', ['build', 'watch']);
 };
