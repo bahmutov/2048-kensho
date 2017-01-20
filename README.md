@@ -4,6 +4,8 @@
 
 ![2048-kensho screenshot](2048-kensho.png)
 
+[![Build status][ci-image] ][ci-url]
+
 Every page reload reshuffles the team numbers
 
 * build with `npm run build`
@@ -30,8 +32,8 @@ To run against deployed website use `npm run test-deployed`.
 Author: Gleb Bahmutov &copy; 2014
 
 * [@bahmutov](https://twitter.com/bahmutov)
-* [glebbahmutov.com](http://glebbahmutov.com)
-* [blog](http://bahmutov.calepin.co/)
+* [glebbahmutov.com](https://glebbahmutov.com)
+* [blog](https://glebbahmutov.com/blog)
 
 License: MIT - do anything with the code, but don't blame me if it does not work.
 
@@ -39,3 +41,6 @@ Spread the word: tweet, star on github, etc.
 
 Support: if you find any problems with this module, email / tweet /
 [open issue](https://github.com/bahmutov/2048-kensho/issues) on Github
+
+[ci-image]: https://travis-ci.org/bahmutov/2048-kensho.svg?branch=master
+[ci-url]: https://travis-ci.org/bahmutov/2048-kensho
