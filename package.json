@@ -22,7 +22,7 @@
     "jshint-stylish": "1.0.0",
     "matchdep": "0.3.0",
     "pre-git": "0.1.1",
-    "standard": "^8.6.0"
+    "standard": "8.6.0"
   },
   "engines": {
     "node": "> 0.10.*"
@@ -44,11 +44,11 @@
   },
   "scripts": {
     "build": "grunt",
+    "lint": "standard --verbose --fix cypress/**/*.js",
+    "pretest": "npm run lint",
     "push": "grunt gh-pages",
     "start": "http-server -p 3000",
     "test": "grunt",
-    "lint": "standard --verbose --fix cypress/**/*.js",
-    "pretest": "npm run lint",
     "test-deployed": "CYPRESS_baseUrl=https://glebbahmutov.com/2048-kensho cypress run"
   },
   "standard": {
