@@ -10,7 +10,7 @@ before_install:
   - npm install -g cypress-cli
 script:
   - npm test
-  - npm run build
+  - npm run build -- --force
   - cypress ci
 branches:
   except:

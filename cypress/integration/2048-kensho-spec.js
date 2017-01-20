@@ -5,6 +5,10 @@ describe('2048-kensho', function () {
   it('has 2048 title', function () {
     cy.title().should('include', '2048')
   })
+  it('has header', () => {
+    cy.get('h1.title').should('be.visible')
+      .contains('kensho')
+  })
   it('starts with 3 tiles', () => {
     cy.get('.tile-container')
       .find('.tile')
