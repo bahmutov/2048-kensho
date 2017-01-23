@@ -17,6 +17,7 @@
 // using ES2015 syntax:
 import './commands'
 import './defaults'
+require('cypress-arrows')
 
 // Alternatively you can use CommonJS syntax:
 // require("./commands")
